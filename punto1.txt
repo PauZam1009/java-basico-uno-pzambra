@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scannerNumeros = new Scanner(System.in);
+
+        System.out.println("Ingrese el valor de A");
+        int A = scannerNumeros.nextInt();
+
+        System.out.println("Ingrese el valor de B");
+        int B = scannerNumeros.nextInt();
+
+        System.out.println("Ingrese el valor de C");
+        int C = scannerNumeros.nextInt();
+
+        if (A == B || B == C || A == C){
+            System.out.println("Los Valores deben ser distintos");
+        } else {
+
+            int mayor = A;
+            int menor = A;
+
+            if (B > mayor) {
+                mayor = B;
+            }
+            if (C > mayor) {
+                mayor = C;
+            }
+            if (B < menor) {
+                menor = B;
+            }
+            if (C < menor) {
+                menor = C;
+            }
+
+            System.out.println("El Valor Mayor es: " + mayor);
+            System.out.println("El Valor Menor es: " + menor);
+        }
+        scannerNumeros.close();
+
+
+
+    }
+}

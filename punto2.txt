@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scannerCalificacion = new Scanner(System.in);
+
+        System.out.println("Ingrese una calificación entre 1 y 10");
+
+        int calificacion = scannerCalificacion.nextInt();
+
+        switch (calificacion){
+            case 1:
+            case 2:
+                System.out.println("Su calificación es: F");
+                break;
+            case 3:
+            case 4:
+                System.out.println("Su calificación es: D");
+                break;
+            case 5:
+            case 6:
+                System.out.println("Su calificación es: C");
+                break;
+            case 7:
+            case 8:
+                System.out.println("Su calificación es: B");
+                break;
+            case 9:
+            case 10:
+                System.out.println("Su calificación es: A");
+                break;
+            default:
+                System.out.println("Número no válido, por favor verifique");
+                break;
+
+        }
+        scannerCalificacion.close();
+
+
+    }
+}
